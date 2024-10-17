@@ -1,0 +1,143 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:porsche ;
+    src: url(911porschav3titleital.ttf)format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.nav1{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(46, 49, 146,0.9);
+    /* background-image: linear-gradient(to right,rgba(37, 40, 121,0)  ,rgba(19, 197, 197,0)); */
+    height: 55px;
+    font-size: 30px;
+    color: black;
+    
+}
+.nav1 a{
+    color: black;
+    text-decoration: none;
+}
+.nav2{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+    background-image: linear-gradient(to right,rgba(46, 49, 146,0.9)  ,rgba(27, 255, 255,0.9));
+
+}
+.nav2 li{
+    list-style-type: none;
+    font-size: 40px;
+    font-family:;
+    font-weight: bold;
+    
+}
+.nav2 ul{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    width: 90rem;
+
+}
+.nav2 img{
+    margin-left: 80px;
+    border-radius: 120px;
+    height: 100px;
+    margin-top:15px ;
+    margin-bottom:15px ;
+ 
+}
+.nav2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.slide{
+   display: flex;
+   flex-direction: column;
+   width: 80vw;
+   height: 700px;
+   border: 3px solid black;
+   margin: auto;
+   /* margin-top:50rem; */
+   background-image:url(backiee-144035-landscape.jpg  );
+   background-size: 100% 100%;
+   animation: slider 10s infinite linear;
+   -webkit-animation:;
+
+}
+@keyframes slider{
+    0%{  background-image: url(backiee-301070-landscape.jpg);}
+    25%{  background-image: url(backiee-303823-landscape.jpg);}
+    50%{  background-image: url(backiee-296373-landscape.jpg);}
+    75%{  background-image: url(backiee-40408-landscape.jpg);}
+    100%{  background-image: url(backiee-144035-landscape.jpg);}
+    /* 75%{  background-image: url(a5.jpg);} */
+    /* 60%{  background-image: url(p7.jpg);} */
+    /* 75%{  background-image: url(power-bi.jpg);} */
+}
+.name{
+    font-size: 18.2rem;
+    /* font-size: 100px; */
+height: 25vh;
+    /* letter-spacing: px; */
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    font-family: porsche;
+}
+.services{
+    display: flex;
+    /* margin-top: 150px; */
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.s img{
+    width: 450px;
+    /* opacity: 0.8; */
+    z-index: 0;
+}
+
+.s img:hover{
+    /*width: 460px;
+    */border-radius:4rem ;
+    opacity: 0.5;
+    
+}
+.s h2{
+    /* position: absolute; */
+     /* top: 70px; */
+     /* left: 100px; */
+     /* bottom: 100px; */
+    color: rgb(0, 0, 0);
+    /* background-color: white; */
+    /* display: inline; */
+    padding: 10px;
+    margin: 10px;
+   font-size: 2.5rem;
+   text-align: center;
+} 
+.footer{
+    background-image: linear-gradient(to right,rgba(46, 49, 146,0.9)  ,rgba(27, 255, 255,0.9));
+    height: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-family: porsche;
+}
+@media (max-width: 1200px) {
+    .name{
+        font-size: 8.6rem;
+    }
+}
